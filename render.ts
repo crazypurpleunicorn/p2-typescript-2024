@@ -1,4 +1,4 @@
-import { User } from "./launches.js";
+import {spacexLaunch} from "./launches.js";
 
 const head = (title: string) => `
 <head>
@@ -34,26 +34,26 @@ const head = (title: string) => `
   </style>
 </head>`;
 
-const renderUsers = (users: Array<User>) => {
+const renderLaunches = (launches: Array<spacexLaunch>) => {
   let html = "";
-  for (const user of users) {
-    html += `<div class="user">
-      <img src="${user.picture.medium}" />
+  for (const launch of launches) {
+    html += `<div class="launch">
+      <img src="${launch.picture.small}" />
       <div class="data">
-        <div class="name">${user.fullName}</div>
-        <div class="email">${user.email}</div>
+        <div class="name">${launch.name}</div>
+        <div class="email">${launch.flightNumber}</div>
       </div>
     </div>`;
   }
   return html;
 }
 
-export const render = (users: Array<User>) => {
+export const render = (launches: Array<spacexLaunch>) => {
   return `
 <html>
-  ${head("User List")}
+  ${head("Launches List")}
   <body>
-    ${renderUsers(users)}
+    ${renderLaunches(launches)}
   </body>
 </html>`;
 };

@@ -1,31 +1,4 @@
-
-// export class User {
-//   constructor(
-//     public gender: "male" | "female",
-//     public name: {
-//       title: "Mr" | "Mrs";
-//       first: string;
-//       last: string;
-//     },
-//     public location: {
-//       street: string;
-//       city: string;
-//       state: string;
-//       country: string;
-//       postcode: number;
-//     },
-//     public login: {
-//       username: string;
-//       password: string;
-//     },
-//     public email: string,
-//     public picture: {
-//       large: string;
-//       medium: string;
-//       thumbnail: string;
-//     }
-//   ) {}
-class spacexLaunch {
+export class spacexLaunch {
   //cuando hago una clase... puedo poner sus atributos vs poner su atributos y rellenarlos en el constructor vs sólo poner el constructor???!!
   //si pongo solo el constructor dice que dicha clase no tiene el atributo x, lo cual es verdad...
   //pero código de Pau sólo tiene un constructor...mmmm pero sin nada en los {}
@@ -77,5 +50,3 @@ export const loadLaunches = async () => {
   
   
 };
-
-loadLaunches()
