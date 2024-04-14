@@ -4,5 +4,5 @@ import { loadLaunches } from "./launches.js";
 
 const launches = await loadLaunches();
 const html = render(launches);
-await writeFile('users.html', html);
+await writeFile('lauches.html', html);
 

@@ -10,16 +10,18 @@ export class spacexLaunch {
     small: string,
     large:string
   };
+  id: string;
   
   constructor(success: Boolean, flightNumber: number, dateUtc: string, name:string, picture: {
                 small: string,
                 large:string
-            }){
+            }, id:string){
               this.success = success;
               this.flightNumber = flightNumber;
               this.dateUtc = dateUtc;
               this.name = name;
               this.picture = picture;
+              this.id = id;
             }
 }
 
@@ -40,9 +42,10 @@ export const loadLaunches = async () => {
     const dateUtc = x.date_utc;
     const name = x.name;
     const picture = x.links.patch
+    const id = x.id
     
     //create an instance of your dataClass
-    let launch = new spacexLaunch(success, flightNumber, dateUtc, name, picture)
+    let launch = new spacexLaunch(success, flightNumber, dateUtc, name, picture,id)
     return launch;
   })
   
