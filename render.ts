@@ -11,7 +11,7 @@ const head = (title: string) => `
       margin: 0;
       padding: 0;
     }
-    .user {
+    .launch {
       font-family: sans-serif;
       display: flex;
       flex-direction: row;
@@ -19,16 +19,16 @@ const head = (title: string) => `
       padding: .4rem;
       border-bottom: 1px solid #ddd;
     }
-    .user img {
+    .launch img {
       width: 3rem;
       height: 3rem;
       border-radius: 50%;
       margin-right: 0.7rem;
     }
-    .user .name {
+    .launch .name {
       font-weight: bold;
     }
-    .user .email {
+    .launch .email {
       font-family: monospace;
     }
   </style>
