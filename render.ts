@@ -41,7 +41,8 @@ const renderLaunches = (launches: Array<spacexLaunch>) => {
       <img src="${launch.picture.small}" />
       <div class="data">
         <div class="name">${launch.name}</div>
-        <div class="email">${launch.flightNumber}</div>
+        <div class="name">Mission status: ${launch.success}</div>
+        <div class="email">Mission flightnumber: ${launch.flightNumber}</div>
       </div>
     </div>`;
   }
