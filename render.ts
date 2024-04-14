@@ -6,32 +6,7 @@ const head = (title: string) => `
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${title}</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-    .launch {
-      font-family: sans-serif;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: .4rem;
-      border-bottom: 1px solid #ddd;
-    }
-    .launch img {
-      width: 3rem;
-      height: 3rem;
-      border-radius: 50%;
-      margin-right: 0.7rem;
-    }
-    .launch .name {
-      font-weight: bold;
-    }
-    .launch .email {
-      font-family: monospace;
-    }
-  </style>
+  <link rel="stylesheet" href="./styles.css">
 </head>`;
 
 const renderLaunches = (launches: Array<spacexLaunch>) => {
