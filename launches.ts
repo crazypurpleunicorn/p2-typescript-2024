@@ -53,3 +53,18 @@ export const loadLaunches = async () => {
   
   
 };
+
+
+type Picture = {
+  small: string;
+  large: string;
+};
+
+export type spacexLaunchType = {
+  success: boolean;
+  flightNumber: number;
+  dateUtc: string;
+  name: string;
+  picture: Picture;
+  id: string;
+};

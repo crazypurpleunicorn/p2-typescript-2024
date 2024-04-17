@@ -115,3 +115,44 @@ a:hover{
     color:white;
 }
 
+
+.listacojonuda {
+  list-style-type: none;
+  padding: 0;
+}
+
+.listacojonuda li {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #141b2d;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.listacojonuda li:nth-child(odd) {
+  background-color: #1f2947;
+}
+
+.listacojonuda li:last-child {
+  margin-bottom: 0;
+}
+
+.listacojonuda li:before {
+  content: "▸";
+  color: #2ed4c2;
+  margin-right: 10px;
+}
+
+.listacojonuda li:nth-child(odd):before {
+  color: #ff3b30;
+}
+
+.specificimage{
+  display: block;
+  width: 12rem;
+  height: 12rem;
+  margin: 6rem auto 2rem;
+}

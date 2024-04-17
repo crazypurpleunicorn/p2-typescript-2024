@@ -168,5 +168,8 @@ dist
 .yarn/install-state.gz
 .pnp.\*
 
-# pauek
-users.html
+# iago
+launches.html
+launchHtmls/*
+
+
